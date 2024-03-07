@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml"/><link rel="preload" href="/fonts/Inter-roman.latin.var.woff2" as="font" type="font/woff2" crossorigin="anonymous"/><title>C++</title><meta name="next-head-count" content="5"/><meta name="robots" content="follow, index"/><meta name="description" content="Clone and deploy your own Next.js portfolio in minutes."/><meta property="og:site_name" content="Next.js Blog Starter Kit"/><meta property="og:description" content="Clone and deploy your own Next.js portfolio in minutes."/><meta property="og:title" content="Next.js Blog Starter Kit"/><meta property="og:image" content="https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@yourname"/><meta name="twitter:title" content="Next.js Blog Starter Kit"/><meta name="twitter:description" content="Clone and deploy your own Next.js portfolio in minutes."/><meta name="twitter:image" content="https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png"/><link rel="preload" href="/_next/static/css/8561bb13ecd83214.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/8561bb13ecd83214.css" crossorigin="" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-87b3a303122f2f0d.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-5429a50ba5373c56.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-c0be61a8807bc1db.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-1600e735c460f078.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/346-6e371916b29e29a2.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/posts/C++-a8bc6a1f9ac3ba6d.js" defer="" crossorigin=""></script><script src="/_next/static/eQ-5lyaunaycarEXP51KI/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/eQ-5lyaunaycarEXP51KI/_ssgManifest.js" defer="" crossorigin=""></script><style id="__jsx-2447ca1c11803f07">footer.jsx-2447ca1c11803f07{margin-top:8rem}a.jsx-2447ca1c11803f07{float:right}</style></head><body><div id="__next"><script>!function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}if(e==='light'||e==='dark')d.style.colorScheme=e}catch(e){}}()</script><article class="nx-container nx-prose max-md:nx-prose-sm dark:nx-prose-dark" dir="ltr"><h1>C++</h1><div class="nx-mb-8 nx-flex nx-gap-3 nx-items-center"><div class="nx-grow dark:nx-text-gray-400 nx-text-gray-600"><div class="nx-not-prose nx-flex nx-flex-wrap nx-items-center nx-gap-1">You<!-- -->,<time dateTime="2024-03-15T00:00:00.000Z">Fri Mar 15 2024</time><span class="nx-px-1">•</span><a class="
+          nx-select-none
+          nx-rounded-md
+          nx-bg-gray-200
+          nx-px-1
+          nx-text-sm
+          nx-text-gray-400
+          nx-transition-colors
+          hover:nx-bg-gray-300
+          hover:nx-text-gray-500
+          dark:nx-bg-gray-600
+          dark:nx-text-gray-300
+          dark:hover:nx-bg-gray-700
+          dark:hover:nx-text-gray-200
+        " href="/tags/BackEnd">BackEnd</a></div></div><div class="nx-flex nx-items-center nx-gap-3 print:nx-hidden"><a href="/posts">Back</a></div></div><h2 class="nx-not-prose subheading-h2">语言<a href="#语言" id="语言" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
+<h4 class="nx-not-prose subheading-h4">模板<a href="#模板" id="模板" class="subheading-anchor" aria-label="Permalink for this section"></a></h4>
+<p>包括函数模板和类模板，均使用泛型参数；使用不同参数进行实例化时包括显式和隐式
+显式实例化：在函数名后的&lt;&gt;中指定模板参数的实际类型。同时，模板可以支持多个模板参数。
+模板参数匹配原则：</p>
+<ol>
+<li>一个非模板函数可以和一个同名的函数模板同时存在，而且该函数模板还可以被实例化为这个非模板函数。但可以通过显式实例化，走模板函数。</li>
+<li>对于非模板函数和同名函数模板，如果其他条件都相同，在调动时会优先调用非模板函数而不会从该模板产生出一个实例。如果模板可以产生一个具有更好匹配的函数， 那么将选择模板。</li>
+<li></li>
+</ol>
+<h2 class="nx-not-prose subheading-h2">网络<a href="#网络" id="网络" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
+<h2 class="nx-not-prose subheading-h2">项目：TinyWebServer<a href="#项目tinywebserver" id="项目tinywebserver" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
+<h3 class="nx-not-prose subheading-h3">线程池<a href="#线程池" id="线程池" class="subheading-anchor" aria-label="Permalink for this section"></a></h3>
+<p>涉及线程、锁机制。使用一个循环队列将主线程和工作线程解耦：主线程往工作队列中插入任务，工作线程通过竞争来取得任务并执行它。
+通俗地说，主线程A的工作内容是accept新的客户端连接并生成fd，工作进程B1/2/3来处理工作线程下发单个连接的IO时间。</p>
+<h3 class="nx-not-prose subheading-h3">同步/异步日志系统<a href="#同步异步日志系统" id="同步异步日志系统" class="subheading-anchor" aria-label="Permalink for this section"></a></h3>
+<p>涉及设计模式，自定义阻塞队列。主要涉及两个模块：日志的定义和使用、单例模式与阻塞队列的定义。</p>
+<ul>
+<li>日志由服务器自动创建，并记录运行状态、错误信息、数据访问信息；</li>
+<li>同步日志：写入函数与工作线程串行执行，由于涉及IO，当单条日志较长时，同步模式会阻塞整个处理流程，服务器错=所能处理的并发能力有所下降。</li>
+<li>阻塞队列：将生产者-消费者模型进行封装，使用循环数组实现队列，作为二者共享缓存区。</li>
+<li>异步日志：将所写日志内容先存入阻塞队列，写线程从阻塞队列取出内容，写入日志。</li>
+<li>单例模式：保证一个类只创建一个实例，同时提供全局访问的方法。
+<ul>
+<li>实现思路：私有化它的构造函数，以防止外界创建单例类的对象；使用类的私有静态指针变量指向类的唯一实例，并用一个公有的静态方法获取该实例。</li>
+<li>有两种实现方法，分别是懒汉和饿汉模式。顾名思义，懒汉模式，即非常懒，不用的时候不去初始化，所以在第一次被使用时才进行初始化；饿汉模式，即迫不及待，在程序运行时立即初始化。</li>
+</ul>
+</li>
+</ul>
+<h2 class="nx-not-prose subheading-h2">项目：KV存储器<a href="#项目kv存储器" id="项目kv存储器" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><footer class="jsx-2447ca1c11803f07"><small class="jsx-2447ca1c11803f07"><time class="jsx-2447ca1c11803f07">2024</time> © Your Name.<a href="/feed.xml" class="jsx-2447ca1c11803f07">RSS</a></small></footer></article></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{}},"page":"/posts/C++","query":{},"buildId":"eQ-5lyaunaycarEXP51KI","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
