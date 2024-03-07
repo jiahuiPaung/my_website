@@ -4,17 +4,8 @@
         <description><![CDATA[jiahui Pang]]></description>
         <link>https://yoursite.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 07 Mar 2024 15:50:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Mar 2024 16:35:14 GMT</lastBuildDate>
         <atom:link href="https://yoursite.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <item>
-            <title><![CDATA[C++]]></title>
-            <description><![CDATA[View examples of all possible Markdown options.]]></description>
-            <link>/posts/C++</link>
-            <guid isPermaLink="true">/posts/C++</guid>
-            <category><![CDATA[BackEnd]]></category>
-            <dc:creator><![CDATA[You]]></dc:creator>
-            <pubDate>Thu, 14 Mar 2024 16:00:00 GMT</pubDate>
-        </item>
         <item>
             <title><![CDATA[Markdown Examples]]></title>
             <description><![CDATA[View examples of all possible Markdown options.]]></description>
@@ -25,13 +16,13 @@
             <pubDate>Thu, 18 Mar 2021 16:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Next.js Pages]]></title>
-            <description><![CDATA[Learn more about Next.js pages.]]></description>
-            <link>/posts/pages</link>
-            <guid isPermaLink="true">/posts/pages</guid>
-            <category><![CDATA[web development]]></category>
+            <title><![CDATA[C++]]></title>
+            <description><![CDATA[View examples of all possible Markdown options.]]></description>
+            <link>/posts/C++</link>
+            <guid isPermaLink="true">/posts/C++</guid>
+            <category><![CDATA[BackEnd]]></category>
             <dc:creator><![CDATA[You]]></dc:creator>
-            <pubDate>Wed, 17 Mar 2021 16:00:00 GMT</pubDate>
+            <pubDate>Thu, 14 Mar 2024 16:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
